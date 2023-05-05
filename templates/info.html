@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style="text-align:right; margin-right:10%;">
+    <a href="{%url 'upload_video' %}" style="text-decoration: none; 
+font-size :32px;color:wheat;">Home</a>
+</div>
+<div class="main" style="position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+min-height: 50%;
+width: 35%;
+box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+background: rgba(194, 202, 208, 0.8);
+padding: 0px 0px 5px 15px;
+box-sizing: border-box;
+border-radius: 8px;
+display: flex;
+flex-direction: column;
+align-items: center;
+">
+    <h1 style="text-align:center;font-weight: 500;">Gait Recognition Using Deep CNN</h1>  
+<p style="font-size: 18px;
+line-height: 1.5;
+margin-bottom: 20px;">
+    Gait recognition project using YOLOv8 would involve training a deep learning model on human walking
+     patterns, using YOLOv8 object detection algorithm to detect body keypoints, and identifying unique
+      walking patterns for recognition purposes.</p>
+
+      <section style="   background-color: #f2f2f2;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: Arial, sans-serif; ">
+        <h1>Team Members</h1>
+        <ol style=" list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;">
+            <li style="margin: 10px 0;
+            font-size: 18px;
+            color: #666;">Lakshmi S Kumar</li>
+            <li  style="margin: 10px 0;
+            font-size: 18px;
+            color: #666;">Thasniya H</li>
+            <li  style="margin: 10px 0;
+            font-size: 18px;
+            color: #666;">Susanth S Kumar
+            </li>
+            <li  style="margin: 10px 0;
+            font-size: 18px;
+            color: #666;">Snobin Abraham</li>
+        </ol>
+      </section>
+    
+</div>
+
+{% endblock %}
