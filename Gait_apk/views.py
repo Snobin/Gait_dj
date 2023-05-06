@@ -109,7 +109,13 @@ def process_video(file):
             prediction = np.argmax(preds)
             print(prediction)
             for name, label in lables.items():
-                if label == prediction:
+                p=str(round(preds[0][prediction]*100, 2))
+                floatp=float(p)
+                #print(floatp)
+                if floatp < 90:
+                        message ='Unknown Person Detected'
+                elif label == prediction:
+                    
                     message = 'Detected : ' + name + \
                         ' (' + \
                         str(round(preds[0][prediction]*100, 2)) + '% Accuracy)'
